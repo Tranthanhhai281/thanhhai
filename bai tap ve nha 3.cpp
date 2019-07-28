@@ -37,8 +37,8 @@ int main()
 			x1=(-b+sqrt(d))/(2*a);
 			x2=(-b-sqrt(d))/(2*a);
 			printf(" \n Phuong trinh co 2 nghiem phan biet:")   ;
-			scanf("%f", x1);
-			scanf("%f", x2);
+			printf(" \n %f", x1);
+			printf(" \n %f", x2);
 		}
 	}
 	return 0 ;
