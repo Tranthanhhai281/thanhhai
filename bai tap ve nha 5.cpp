@@ -11,6 +11,8 @@ int main()
 	{
 		if(n%i==0)
 		S = S+i;
+		else
+		continue ;
 	}
 	if(n==S)
 	{

@@ -19,7 +19,7 @@ int main()
 		printf (" \n  Day khong la ba canh cua tam giac. Vui long nhap lai") ;
     }
 	else 
-	     break;
+	     continue;
     }
 	while((a*a>b*b+c*c) || (b*b>a*a+c*c) || (c*c>a*a+b*b)) ;
 		
