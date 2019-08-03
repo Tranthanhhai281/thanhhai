@@ -3,11 +3,12 @@
 
 int main ()
 {
-	int n, t ;
+	int n ;
 	printf(" Nhap vao n= ") ;
 	scanf("%d", &n) ;
 	for(int i=1; i<n;i++)
 	{
+		int t=0;
 		int m=i;
 		while(m>0)
 		{
@@ -16,7 +17,6 @@ int main ()
 		}
 		if(t==i)
 		printf("\n So thuan nghich nho hon %d la: %d", n, i) ;
-		t=0;
 	}
 	
 	return 0 ; 

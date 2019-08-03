@@ -6,7 +6,7 @@ int main()
 	printf(" Nhap vao n=")  ;
 	scanf("%d" , &n) ;
 	int f0 = 1 ;
-	int f1 = 1 ;
+	int f1 = 0 ;
 	int fn  ;
 	for(int i=2; i<=n; i++)
 	{
