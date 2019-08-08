@@ -10,9 +10,7 @@ int main()
 	for(int i=1; i<n ; i++)
 	{
 		if(n%i==0)
-		S = S+i;
-		else
-		continue ;
+		S = S+i;		
 	}
 	if(n==S)
 	{
