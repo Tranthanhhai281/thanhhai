@@ -23,6 +23,13 @@ void tim_so_gan_lon_nhat(int a[], int n){
 		}
 	}
 	int max2 = 0 ;
+	if(max = a[0]){
+		max2 = a[1] ;
+	}
+	else{
+		max2 = a[0] ;
+	}
+	
 	for(int i=0; i<n; i++){
 		if(max2<max && max!=a[i] && max2<a[i]){
 			max2 = a[i]  ;
@@ -35,9 +42,11 @@ int main(){
 	int n;
 	printf("\n Nhap vao n=") ;
 	scanf("%d", &n)  ;
+
 	int a[n] ;
 	nhap_mang(a,n) ;
 	xuat_mang(a,n) ;
+  
     tim_so_gan_lon_nhat(a,n) ;
 	
 	return 0 ; 

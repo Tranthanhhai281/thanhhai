@@ -33,7 +33,7 @@ int tong_lon_nhat(int a[4][4]){
     		tong = tong + a[i][j] ;
 		}
 		if(i == 0){
-			max=tong;
+			max = tong;
 		}
 		if(max < tong){
 			max = tong;
