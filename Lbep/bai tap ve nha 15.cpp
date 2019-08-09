@@ -1,59 +1,63 @@
 #include<stdio.h>
 
-void nhap_ma_tran(int a[4][4]){
-	for(int i=0; i<4; i++)
-	{
-		for(int j=0; j<4 ; j++)
-		{
-			printf(" Nhap a[%d][%d] = ", i, j) ;
-			scanf("%d", &a[i][j]) ;
-		}
+void nhap_mang(int a[], int n){
+    for(int i=0; i<n; i++){
+        printf("\n Nhap vao phan tu a[%d] la:", i) ;
+        scanf("%d", &a[i]) ; 
 	}
 }
 
-void xuat_ma_tran(int a[4][4]){
-	for(int i=0; i<4; i++)
-	{
-		for(int j=0; j<4; j++)
-		{
-		   printf("%5d",a[i][j]) ;
+void xuat_mang(int a[], int n){
+	printf("\n Ta co mang la:\n") ;
+	for(int i=0; i<n; i++){
+		printf("%5d", a[i]) ;
+	}
+	printf("\n")  ;
+}
+
+void tang_dan(int a[], int n){
+	for(int i=0; i<n; i++){
+		int j= i-1;
+		int tmp = a[i] ;
+		while((j >= 0 ) && (tmp < a[j])){
+			a[j+1] = a[j] ;
+			j-- ; 
 		}
-		printf("\n");   
+		a[j+1] = tmp;
+	}
+	printf("\n Mang tang dan la:\n") ;
+	for(int i=0; i<n; i++){
+		printf("%5d",a[i]) ;
 	}
 }
 
-int tong_lon_nhat(int a[4][4]){
-	int max = 0;
-    int x = 0 ;
-    for(int i=0; i<4; i++)
-    {
-    	int tong = 0;
-    	for(int j=0; j<4; j++)
-    	{
-    		tong = tong + a[i][j] ;
+void giam_dan(int a[], int n){
+	for(int i=0; i<n;i++){
+		int j= i-1;
+		int tmp = a[i] ;
+		while((j >= 0 ) && (tmp > a[j])){
+			a[j+1] = a[j] ;
+			j-- ; 
 		}
-		if(i == 0){
-			max = tong;
-		}
-		if(max < tong){
-			max = tong;
-			x = i  ;
-		}
+		a[j+1] = tmp;
 	}
-	printf("\n Hang %d co gia tri lon nhat= %d", x, max) ;
-	
-	return x ;
+	printf("\n Mang giam dan la:\n") ;
+	for(int i=0; i<n; i++){
+		printf("%5d",a[i]) ;
+	}
 }
 
 int main()
 {
-	int a[4][4];
-	nhap_ma_tran(a);
-	printf("\n Ta co ma tran la:\n") ;
-	xuat_ma_tran(a) ;
-	
-	tong_lon_nhat(a) ;
+	int n;
+	printf("\n Nhap vao n=") ;
+	scanf("%d", &n) ;
+	int a[n] ;
+	nhap_mang(a,n) ;
+	xuat_mang(a,n) ;
+	tang_dan(a,n)  ;
+	giam_dan(a,n)  ;
 
-	return 0;
-	
+	return 0 ;
+		
 }
