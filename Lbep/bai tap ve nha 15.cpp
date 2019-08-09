@@ -41,6 +41,7 @@ int tong_lon_nhat(int a[4][4]){
 		}
 	}
 	printf("\n Hang %d co gia tri lon nhat= %d", x, max) ;
+	
 	return x ;
 }
 
