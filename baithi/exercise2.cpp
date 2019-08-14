@@ -22,7 +22,7 @@ int main()
         a[n-1-i]=temp;
     }
     printf("\n Mang dao nguoc la:\t ");
-    for(int i=0;i<n;i++){
+    for(int i=0; i<n; i++){
         printf("%d \t",a[i]);
     } 
 	

@@ -3,27 +3,27 @@
 
 int main(){
 	int a;
-	printf("\n Nhap vao a=") ;
+	printf("\n Input a=") ;
 	scanf("%d", &a) ;
 	int b;
-	printf("\n Nhap vao b=") ;
+	printf("\n Input b=") ;
 	scanf("%d", &b) ;
 	
 	int S;
 	S = a + b ;
-    printf("\n Tong cua hai so la: %d", S) ;
+    printf("\n Calculate Sum: %d", S) ;
 
     int H ;
     H = a - b ; 
-    printf("\n Hieu cua hai so la: %d", H) ;
+    printf("\n Calculate Substraction: %d", H) ;
     
     int T;
 	T = a * b ;
-	printf("\n Tich cua hai so la: %d", T) ;
+	printf("\n Calculate maitiplication: %d", T) ;
 	
 	int F;
 	F = a / b ;
-	printf("\n Thuong cua hai so la: %d", F) ;
+	printf("\n Calculate Division: %d", F) ;
 	
 	
 	return 0;
