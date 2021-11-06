@@ -61,12 +61,21 @@ public class Order implements IOperation {
                 System.out.println("Nhap khong hop le.");
             }
         }
-        System.out.println("danh sach mua hang: ");
-        
     }
 
     @Override
     public void xuat() {
+        System.out.println("Ten khach hang:" + this.customer +
+                "; ngay mua hang:" + this.purchasedate + "; danh sch mua:" + this.dsProduct);
+    }
 
+    @Override
+    public String toString() {
+        return "Order{" +
+                "customer='" + customer + '\'' +
+                ", dsProduct=" + dsProduct +
+                ", purchasedate=" + purchasedate +
+                ", sdf=" + sdf +
+                '}';
     }
 }

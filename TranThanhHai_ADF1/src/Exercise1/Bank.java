@@ -35,7 +35,7 @@ public class Bank {
     public void NhapTT(){
         Scanner sc = new Scanner(System.in);
         String str = "";
-        System.out.println("---Bang tinh tien lai hang thang----");wae
+        System.out.println("---Bang tinh tien lai hang thang----");
         try {
             System.out.println("Nhap vao so tien ban vay: ");
             this.balance = sc.nextDouble();

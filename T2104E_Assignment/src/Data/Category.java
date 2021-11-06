@@ -81,4 +81,13 @@ public class Category implements IOperation {
         System.out.println("Ma Nhom Hang: "+ this.IdCate + "; Ten nhom hang : "+ this.NameCate +
                 "; vat: " + this.vat);
     }
+
+    @Override
+    public String toString() {
+        return "Category{" +
+                "IdCate='" + IdCate + '\'' +
+                ", NameCate='" + NameCate + '\'' +
+                ", vat=" + vat +
+                '}';
+    }
 }

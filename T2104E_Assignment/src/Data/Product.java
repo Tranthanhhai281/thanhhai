@@ -125,7 +125,20 @@ public class Product implements IOperation {
     @Override
     public void xuat() {
         System.out.println("Ma san pham:" + this.IdPro + "; ma vach:" + this.Barcode +
-                "; ten san pham:" + this.Barcode + "; mo ta:" + this.describe +
+                "; ten san pham:" + this.NamePro + "; mo ta:" + this.describe +
                 "; gia mua:" + this.importprice + "; gia ban:" + this.price);
+    }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "IdCate=" + IdCate +
+                ", IdPro='" + IdPro + '\'' +
+                ", Barcode='" + Barcode + '\'' +
+                ", NamePro='" + NamePro + '\'' +
+                ", describe='" + describe + '\'' +
+                ", importprice=" + importprice +
+                ", price=" + price +
+                '}';
     }
 }
